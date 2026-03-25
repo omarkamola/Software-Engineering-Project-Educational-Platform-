@@ -1,195 +1,144 @@
-# منصة التعليم العربية 🎓
+<div align="center">
+  <img src="https://via.placeholder.com/1000x250/0f172a/38bdf8?text=Tadreeb+LMS+-+Educational+Platform" alt="Tadreeb LMS Banner">
+  
+  <br />
+  
+  # Tadreeb LMS 🎓
+  
+  **A Comprehensive, Modern & Open-Source Educational Platform**
+  
+  [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+  [![GSoC Ready](https://img.shields.io/badge/GSoC-Ready-orange.svg?style=flat-square)](https://summerofcode.withgoogle.com/)
+  [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+  [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+  [![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white)](https://nextjs.org/)
+</div>
 
-منصة تعليمية شاملة تربط الطلاب والمعلمين وأولياء الأمور
+---
 
-## 📋 المحتويات
+## 🌟 About The Project
 
-- [نظرة عامة](#نظرة-عامة)
-- [المميزات](#المميزات)
-- [التقنيات المستخدمة](#التقنيات-المستخدمة)
-- [التثبيت والإعداد](#التثبيت-والإعداد)
-- [استخدام النظام](#استخدام-النظام)
-- [واجهة برمجية API](#واجهة-برمجية-api)
+**Tadreeb LMS** is a modern, scalable, and open-source Learning Management System (LMS) engineered to bridge the gap between students, educators, and parents. Designed with high performance, a sophisticated user experience, and robust architecture, Tadreeb brings the powerful features of platforms like Udemy into the open-source community.
 
-## 🌟 نظرة عامة
+> **💡 Note for GSoC Candidates/Reviewers:** 
+> This project is structured specifically to welcome open-source contributions. With a clear separation of frontend/backend concerns, a modern tech-stack, and well-defined architecture, it is an excellent candidate for **Google Summer of Code (GSoC)** and other open-source initiatives.
 
-منصة تعليم إلكترونية متكاملة تدعم اللغة العربية بشكل كامل، مصممة لتسهيل عملية التعليم والتواصل بين:
+### ✨ Key Features
 
-- **الطلاب**: الوصول للدورات والتسجيل فيها
-- **المعلمون**: إنشاء وإدارة الدورات التعليمية
-- **أولياء الأمور**: متابعة تقدم أبنائهم
+- **🎓 For Students:**
+  - Browse, search, and filter a rich catalog of educational courses by grade and subject.
+  - Seamless course enrollment and intuitive progress tracking.
+  - Interactive, personalized dashboard with learning statistics.
+- **👨‍🏫 For Educators & Teachers:**
+  - Dedicated Teacher Dashboard to create, publish, and manage courses.
+  - Dynamic curriculum builder, pricing management, and student enrollment tracking.
+- **👨‍👩‍👧 For Parents (Upcoming):**
+  - Monitor children's educational progress, attendance, and performance metrics.
+- **🛡️ Core System Security & Architecture:**
+  - Strong Role-Based Access Control (RBAC: Admin, Teacher, Student, Parent).
+  - Secure JWT Authentication & bcrypt password hashing.
+  - Fully responsive, modern glassmorphism-inspired UI with system-defined dark mode.
 
-## ✨ المميزات
+## 🛠️ Tech Stack
 
-### للطلاب
+The architecture is decoupled into a **Frontend Application** and a **Backend API**, favoring scalability and modularity.
 
-- 📚 تصفح الدورات المتاحة
-- ✏️ التسجيل في الدورات
-- 📊 عرض الدورات المسجل فيها
+| **Frontend** | **Backend** | **Infrastructure & Tools** |
+| :--- | :--- | :--- |
+| **Next.js 16 (App Router)** | **Node.js + Express.js** | **MySQL 8.0+** |
+| **TypeScript** | **TypeScript** | **Git & GitHub** |
+| **Tailwind CSS** | **JWT Authentication** | **RESTful APIs** |
+| **Axios & Framer Motion**| **bcrypt Hashing** | **Prettier & ESLint** |
 
-### للمعلمين
+## 🚀 Getting Started
 
-- ➕ إنشاء دورات تعليمية جديدة
-- 📝 تحديد المحتوى والأسعار
-- 👥 إدارة الطلاب المسجلين
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing.
 
-### للنظام
+### Prerequisites
 
-- 🔐 نظام مصادقة آمن (JWT)
-- 👤 إدارة أدوار المستخدمين
-- 🌍 دعم كامل للغة العربية (RTL)
+Ensure you have the following installed on your local environment:
+- **Node.js** (v18.0.0 or higher)
+- **MySQL** (v8.0 or higher)
+- **npm** or **yarn**
 
-## 🛠 التقنيات المستخدمة
-
-### Backend
-
-- **Node.js** + **Express.js**
-- **TypeScript**
-- **MySQL** (قاعدة البيانات)
-- **JWT** (المصادقة)
-- **bcrypt** (تشفير كلمات المرور)
-
-### Frontend
-
-- **Next.js 16** (React)
-- **TypeScript**
-- **Tailwind CSS**
-- **Axios** (طلبات API)
-
-## 🚀 التثبيت والإعداد
-
-### المتطلبات
-
-- Node.js 18+
-- MySQL 8+
-- npm أو yarn
-
-### 1. إعداد قاعدة البيانات
+### 1. Database Initialization
 
 ```bash
-# تشغيل MySQL وإنشاء قاعدة البيانات
+# Log into MySQL CLI
 mysql -u root -p
+
+# Create the database
 CREATE DATABASE education_platform;
 exit;
 
-# استيراد Schema
+# Initialize Schema tables and seed data
 cd backend
 npx ts-node src/scripts/initDb.ts
 ```
 
-### 2. إعداد Backend
+### 2. Backend Setup
 
 ```bash
 cd backend
 
-# تثبيت الحزم
+# Install dependencies
 npm install
 
-# إعداد ملف .env
-echo "PORT=5000
+# Create environment configuration
+cat << EOF > .env
+PORT=5000
 DB_HOST=localhost
 DB_USER=root
-DB_PASSWORD=YOUR_PASSWORD
+# Replace with your local MySQL password
+DB_PASSWORD=YOUR_MYSQL_PASSWORD
 DB_NAME=education_platform
-JWT_SECRET=your_secret_key" > .env
+JWT_SECRET=your_super_secret_jwt_key
+EOF
 
-# تشغيل الخادم
+# Run the backend server in development mode
 npm run dev
 ```
 
-### 3. إعداد Frontend
+### 3. Frontend Setup
 
 ```bash
 cd frontend
 
-# تثبيت الحزم
+# Install dependencies
 npm install
 
-# إعداد ملف .env.local
-echo "NEXT_PUBLIC_API_URL=http://localhost:5000/api" > .env.local
+# Create environment configuration
+cat << EOF > .env.local
+NEXT_PUBLIC_API_URL=http://localhost:5000/api
+EOF
 
-# تشغيل التطبيق
+# Run the frontend application
 npm run dev
 ```
 
-## 💻 استخدام النظام
+## 💻 Usage & Testing Roles
 
-1. افتح المتصفح على `http://localhost:3000`
-2. انقر على "إنشاء حساب جديد"
-3. اختر نوع الحساب (طالب / معلم / ولي أمر)
-4. املأ البيانات المطلوبة
-5. سجل الدخول واستكشف المنصة
+1. Open your browser and navigate to `http://localhost:3000`.
+2. Explore the beautifully crafted landing page.
+3. Use the following test accounts to experience different roles:
 
-### حسابات تجريبية
+| Role | Username | Password |
+|------|----------|----------|
+| **Teacher** | `teacher1` | `password123` |
+| **Student** | `student1` | `password123` |
 
-```
-معلم: username: teacher1, password: password123
-طالب: username: student1, password: password123
-```
+## 🤝 Contributing (GSoC Ready)
 
-## 📡 واجهة برمجية API
+We warmly welcome contributions from the community! Whether you are a GSoC applicant, a seasoned developer, or a first-time contributor, your input is highly valued.
 
-### Authentication
+1. **Fork** the repository.
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'feat: Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a **Pull Request**.
 
-```http
-POST /api/auth/register
-POST /api/auth/login
-```
+> Please refer to the **Issues** tab for a list of beginner-friendly tasks (look for the `good first issue` label).
 
-### Courses
+## 📄 License
 
-```http
-GET  /api/courses
-GET  /api/courses/:id
-POST /api/courses (معلم فقط)
-```
-
-### Enrollments
-
-```http
-POST /api/enrollments
-GET  /api/enrollments/my-enrollments
-```
-
-## 📁 هيكل المشروع
-
-```
-.
-├── backend/
-│   ├── src/
-│   │   ├── controllers/     # منطق العمليات
-│   │   ├── routes/          # المسارات
-│   │   ├── middleware/      # الوسطاء
-│   │   ├── config/          # الإعدادات
-│   │   └── types/           # أنواع TypeScript
-│   └── package.json
-│
-├── frontend/
-│   ├── app/
-│   │   ├── login/           # صفحة تسجيل الدخول
-│   │   ├── register/        # صفحة التسجيل
-│   │   └── dashboard/       # لوحة التحكم
-│   ├── lib/                 # API utilities
-│   └── contexts/            # React Context
-│
-└── schema.sql               # هيكل قاعدة البيانات
-```
-
-## 🔒 الأمان
-
-- تشفير كلمات المرور باستخدام bcrypt
-- مصادقة JWT للجلسات
-- حماية المسارات بناءً على الأدوار
-- التحقق من صحة البيانات المدخلة
-
-## 📝 الترخيص
-
-هذا المشروع مفتوح المصدر ومتاح للاستخدام التعليمي.
-
-## 👥 المطورون
-
-تم تطوير هذا المشروع كنظام تعليمي متكامل.
-
----
-
-**ملاحظة:** هذا المشروع للأغراض التعليمية. للاستخدام في بيئة الإنتاج، يرجى إضافة المزيد من الإجراءات الأمنية.
+This project is open-source and available under the **MIT License**.
