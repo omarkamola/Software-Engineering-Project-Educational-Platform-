@@ -127,18 +127,6 @@ npm run dev
 | **Teacher** | `teacher1` | `password123` |
 | **Student** | `student1` | `password123` |
 
-## 🤝 Contributing (GSoC Ready)
-
-We warmly welcome contributions from the community! Whether you are a GSoC applicant, a seasoned developer, or a first-time contributor, your input is highly valued.
-
-1. **Fork** the repository.
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'feat: Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a **Pull Request**.
-
-> Please refer to the **Issues** tab for a list of beginner-friendly tasks (look for the `good first issue` label).
-
 ## 📄 License
 
 This project is open-source and available under the **MIT License**.
