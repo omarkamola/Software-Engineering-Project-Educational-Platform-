@@ -1,11 +1,11 @@
 <div align="center">
-  <img src="https://via.placeholder.com/1000x250/0f172a/38bdf8?text=Tadreeb+LMS+-+Educational+Platform" alt="Tadreeb LMS Banner">
+  <img src="https://via.placeholder.com/1000x250/0f172a/38bdf8?text=Raqi+-+The+Elevated+Learning+Experience" alt="Raqi LMS Banner">
   
   <br />
   
-  # Tadreeb LMS 🎓
+  # Raqi 🎓
   
-  **A Comprehensive, Modern & Open-Source Educational Platform**
+  **An Elevated, Modern & Open-Source Educational Platform**
   
   [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
   [![GSoC Ready](https://img.shields.io/badge/GSoC-Ready-orange.svg?style=flat-square)](https://summerofcode.withgoogle.com/)
@@ -18,7 +18,7 @@
 
 ## 🌟 About The Project
 
-**Tadreeb LMS** is a modern, scalable, and open-source Learning Management System (LMS) engineered to bridge the gap between students, educators, and parents. Designed with high performance, a sophisticated user experience, and robust architecture, Tadreeb brings the powerful features of platforms like Udemy into the open-source community.
+**Raqi** is a modern, scalable, and open-source Learning Management System (LMS) engineered to bridge the gap between students, educators, and parents. Designed with high performance, a sophisticated user experience, and robust architecture, Raqi (meaning "Elevated" in Arabic) brings the powerful features of platforms like Udemy into the open-source community.
 
 > **💡 Note for GSoC Candidates/Reviewers:** 
 > This project is structured specifically to welcome open-source contributions. With a clear separation of frontend/backend concerns, a modern tech-stack, and well-defined architecture, it is an excellent candidate for **Google Summer of Code (GSoC)** and other open-source initiatives.
