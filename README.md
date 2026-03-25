@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="frontend/public/banner.png" alt="Nexus Edu Banner">
+  <img src="frontend/public/banner.svg" alt="Nexus Edu Banner" width="100%">
   
   <br />
   
