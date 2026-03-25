@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://via.placeholder.com/1000x250/0f172a/38bdf8?text=Nexus+Edu+-+The+Elevated+Learning+Experience" alt="Nexus Edu Banner">
+  <img src="frontend/public/banner.png" alt="Nexus Edu Banner">
   
   <br />
   
