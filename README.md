@@ -1,9 +1,9 @@
 <div align="center">
-  <img src="https://via.placeholder.com/1000x250/0f172a/38bdf8?text=Raqi+-+The+Elevated+Learning+Experience" alt="Raqi LMS Banner">
+  <img src="https://via.placeholder.com/1000x250/0f172a/38bdf8?text=Nexus+Edu+-+The+Elevated+Learning+Experience" alt="Nexus Edu Banner">
   
   <br />
   
-  # Raqi 🎓
+  # Nexus Edu 🎓
   
   **An Elevated, Modern & Open-Source Educational Platform**
   
@@ -18,7 +18,7 @@
 
 ## 🌟 About The Project
 
-**Raqi** is a modern, scalable, and open-source Learning Management System (LMS) engineered to bridge the gap between students, educators, and parents. Designed with high performance, a sophisticated user experience, and robust architecture, Raqi (meaning "Elevated" in Arabic) brings the powerful features of platforms like Udemy into the open-source community.
+**Nexus Edu** is a modern, scalable, and open-source Learning Management System (LMS) engineered to bridge the gap between students, educators, and parents. Designed with high performance, a sophisticated user experience, and robust architecture, Nexus Edu brings the powerful features of platforms like Udemy into the open-source community.
 
 > **💡 Note for GSoC Candidates/Reviewers:** 
 > This project is structured specifically to welcome open-source contributions. With a clear separation of frontend/backend concerns, a modern tech-stack, and well-defined architecture, it is an excellent candidate for **Google Summer of Code (GSoC)** and other open-source initiatives.
